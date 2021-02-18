@@ -175,7 +175,7 @@ html {
  * https://www.w3schools.com/cssref/css_websafe_fonts.asp
  */
 body {
-  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem; /* Tamaño de fuente: 16px */
   line-height: 1.3;
 }
@@ -184,7 +184,7 @@ h1,
 h2,
 h3,
 .secondary-font {
-  font-family: 'Crimson Text', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
