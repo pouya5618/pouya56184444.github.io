@@ -1,17 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pouya</title>
-</head>
-<body>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dignissimos! Placeat, tempora tenetur vel dolores, debitis id, quasi quis at dolore pariatur assumenda autem officia aliquam repellendus alias hic voluptates!scascsasssssssssss
-       scascsassssssssssssssssssssssssss
-       scascsassssssssssssssssssssssssssssssssssssssssssssssssss
-       sssssssssssssssssssssssssssssss
-   </p>
-   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quos error ipsa porro vel, necessitatibus iusto quibusdam cum, qui, aliquam in? Temporibus quasi repellat, dolores molestiae vero dolore in tempora?
-       kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-   </p> 
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>XX</title>
+        <!--
+            Cargamos nuestras familias tipográficas desde Google Fonts
+            Recordar de utilizar siempre la opción <link/> ya que mejora la
+            performance en comparación a la opción @import dentro del CSS.
+            Y recordar de cargarlas siempre antes de nuestros estilos, ya que no
+            funcionarían porque no existen, tiene que ser en orden.
+
+            https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/
+        -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Work+Sans:wght@400;600&display=swap"
+            rel="stylesheet">
+        <link href="assets/css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <!-- Este es una línea de comentario en HTML -->
+        <!--
+            Este es un comentario
+            de varias líneas en HTML
+        -->
+        <header id="header" class="header">
+            <div class="header-container wrapper">
+                <div class="logo">
+                    <!--
+                        Incluímos un SVG en línea como un elemento HTML.
+                        También se puede incluir utilizando el elemento <img />, pero perdemos versatilidad para modificarlo con CSS o para añadir animaciones.
+                    -->
+                    <svg width="36" height="25" viewBox="0 0 36 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 3L20.5263 19.5H1.47372L11 3Z" fill="#1A1A1A" />
+                        <path d="M25 22L15.4737 5.5L34.5263 5.5L25 22Z" fill="#1A1A1A" />
+                    </svg>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/portafolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contáctame</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="menu-open">
+                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H0V0H18V1Z"
+                            fill="#1A1A1A" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V10H18V11Z"
+                            fill="#1A1A1A" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H0V5H18V6Z"
+                            fill="#1A1A1A" />
+                    </svg>
+                </button>
+                <button class="menu-close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.353553" y1="0.646447" x2="13.0815" y2="13.3744"
+                            stroke="black" />
+                        <line x1="0.646447" y1="13.6464" x2="13.3744" y2="0.918525"
+                            stroke="black" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main>
+            <section class="billboard">
+                <div class="wrapper">
+                    <img class="billboard__image" src="assets/img/main-image.jpg" alt="" />
+                    <div class="billboard__content">
+                        <h1 class="billboard__title">Hola, soy Jonas Kahnwald, diseñador de
+                            interiores</h1>
+                        <a class="button" href="#about">Sobre mi</a>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="about">
+                <div class="wrapper">
+                    <div class="row reverse">
+                        <div class="about__content column">
+                            <h2>Sobre mi</h2>
+                            <p>Mi visión: esa creación, cualquiera que sea la forma que adopte, debe
+                                mejorar
+                                la
+                                vida de tantas
+                                personas. como sea posible. Creo con vehemencia que este deber
+                                poético y
+                                político, rebelde y
+                                benevolente, pragmático y subversivo debe ser compartido por todos.
+                            </p>
+
+                            <p>A los ojos de este consumado ciudadano del mundo, compartir su visión
+                                ética y
+                                humanista de un
+                                planeta más igualitario es un deber, si no un imperativo moral, que
+                                se
+                                traduce
+                                en proyectos poco
+                                convencionales que traen fértiles sorpresas. Es fácil adivinar su
+                                curso de
+                                acción: un objeto debe
+                                ser útil antes de ser hermoso.
+                            </p>
+                            <a class="button" href="">Ver mi portfolio</a>
+                        </div>
+                        <div class="column">
+                            <div class="profile-picture"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="contact">
+                <div class="wrapper">
+                    <div class="contact__row  row">
+                        <div class="contact__title  column">
+                            Te interesa hacer un proyecto juntxs?
+                        </div>
+                        <div class="column">
+                            <a class="button" href="">Contáctame</a>
+                            <a class="button hollow" href="">Contáctame</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer class="footer">
+            <div class="wrapper">
+                Footer
+            </div>
+        </footer>
+
+    </body>
+
 </html>
