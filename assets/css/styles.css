@@ -329,7 +329,7 @@ p + p {
 }
 
 .profile-picture {
-  background: url(../img/mobile-space\ travel.jpg) 50% no-repeat;
+  background: url(../img/mobile-spacetravel.jpg) 50% no-repeat;
   background-size: cover;
   max-width: 32rem;
 }
