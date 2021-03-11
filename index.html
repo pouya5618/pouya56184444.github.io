@@ -1,168 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>pouya5618</title>
-        <!--
-            Cargamos nuestras familias tipográficas desde Google Fonts
-            Recordar de utilizar siempre la opción <link/> ya que mejora la
-            performance en comparación a la opción @import dentro del CSS.
-            Y recordar de cargarlas siempre antes de nuestros estilos, ya que no
-            funcionarían porque no existen, tiene que ser en orden.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 
-            https://www.freecodecamp.org/news/how-to-use-google-fonts-in-your-next-web-design-project-e1ad48f1adfa/
-        -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="assets/css/styles.css" rel="stylesheet" />
-    </head>
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
-    <body>
+    <!-- PERSONAL STYLES-->
+    <link href="css/styles.css" rel="stylesheet" />
 
-        <!-- Este es una línea de comentario en HTML -->
-        <!--
-            Este es un comentario
-            de varias líneas en HTML
-        -->
-        <header id="header" class="header">
-            <div class="header-container wrapper">
-                <div class="logo">
-                    <!--
-                        Incluímos un SVG en línea como un elemento HTML.
-                        También se puede incluir utilizando el elemento <img />, pero perdemos versatilidad para modificarlo con CSS o para añadir animaciones.
-                    -->
-                    
-                    
-                    <svg width="59" height="25" viewBox="0 0 59 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.48633 13.1758V18H2.33203V3.99609H7.27344C10.8021 3.99609 12.5664 5.48372 12.5664 8.45898C12.5664 9.86523 12.0586 11.0046 11.043 11.877C10.0339 12.7428 8.68294 13.1758 6.99023 13.1758H5.48633ZM5.48633 6.41797V10.7832H6.72656C8.40625 10.7832 9.24609 10.0475 9.24609 8.57617C9.24609 7.13737 8.40625 6.41797 6.72656 6.41797H5.48633ZM18.4746 18.2441C16.8079 18.2441 15.4961 17.7786 14.5391 16.8477C13.5885 15.9102 13.1133 14.6406 13.1133 13.0391C13.1133 11.3854 13.6081 10.0931 14.5977 9.16211C15.5872 8.22461 16.9251 7.75586 18.6113 7.75586C20.2715 7.75586 21.5736 8.22461 22.5176 9.16211C23.4616 10.0931 23.9336 11.3268 23.9336 12.8633C23.9336 14.5234 23.4453 15.8353 22.4688 16.7988C21.4987 17.7624 20.1673 18.2441 18.4746 18.2441ZM18.5527 10.1191C17.8236 10.1191 17.2572 10.3698 16.8535 10.8711C16.4499 11.3724 16.248 12.082 16.248 13C16.248 14.9206 17.0228 15.8809 18.5723 15.8809C20.0501 15.8809 20.7891 14.8945 20.7891 12.9219C20.7891 11.0534 20.0436 10.1191 18.5527 10.1191ZM35.4375 18H32.3613V16.4766H32.3125C31.5508 17.6549 30.5319 18.2441 29.2559 18.2441C26.9382 18.2441 25.7793 16.8411 25.7793 14.0352V8H28.8555V13.7617C28.8555 15.1745 29.4154 15.8809 30.5352 15.8809C31.0885 15.8809 31.5312 15.6888 31.8633 15.3047C32.1953 14.9141 32.3613 14.3867 32.3613 13.7227V8H35.4375V18ZM47.5664 8L43.5039 18.8008C42.5273 21.3984 41.056 22.6973 39.0898 22.6973C38.3411 22.6973 37.7259 22.6126 37.2441 22.4434V19.9824C37.6543 20.2233 38.1003 20.3438 38.582 20.3438C39.3763 20.3438 39.9297 19.9694 40.2422 19.2207L40.7695 17.9805L36.707 8H40.125L41.9902 14.084C42.1074 14.4616 42.1986 14.9076 42.2637 15.4219H42.3027C42.3613 15.0443 42.4688 14.6048 42.625 14.1035L44.5098 8H47.5664ZM57.127 18H54.207V16.5645H54.168C53.4974 17.6842 52.5046 18.2441 51.1895 18.2441C50.2194 18.2441 49.4544 17.9707 48.8945 17.4238C48.3411 16.8704 48.0645 16.1348 48.0645 15.2168C48.0645 13.2767 49.2135 12.1569 51.5117 11.8574L54.2266 11.4961C54.2266 10.4023 53.6341 9.85547 52.4492 9.85547C51.2578 9.85547 50.125 10.2103 49.0508 10.9199V8.5957C49.4805 8.37435 50.0664 8.17904 50.8086 8.00977C51.5573 7.84049 52.2376 7.75586 52.8496 7.75586C55.7012 7.75586 57.127 9.17839 57.127 12.0234V18ZM54.2266 13.9375V13.2637L52.4102 13.498C51.4076 13.6283 50.9062 14.0807 50.9062 14.8555C50.9062 15.207 51.0267 15.4967 51.2676 15.7246C51.515 15.946 51.847 16.0566 52.2637 16.0566C52.8431 16.0566 53.3151 15.8581 53.6797 15.4609C54.0443 15.0573 54.2266 14.5495 54.2266 13.9375Z" fill="black"/>
-                    </svg>
-                            </div>
-                <nav class="navigation">
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portafolio">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="menu-open">
-                    <svg width="18" height="11" viewBox="0 0 18 11" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H0V0H18V1Z"
-                            fill="#1A1A1A" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V10H18V11Z"
-                            fill="#1A1A1A" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H0V5H18V6Z"
-                            fill="#1A1A1A" />
-                    </svg>
-                </button>
-                <button class="menu-close">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <line x1="0.353553" y1="0.646447" x2="13.0815" y2="13.3744"
-                            stroke="black" />
-                        <line x1="0.646447" y1="13.6464" x2="13.3744" y2="0.918525"
-                            stroke="black" />
-                    </svg>
-                </button>
+    <title>Pouya Site</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html" class="secondary-font">POUYA<br><span class="txt-secondary">Profesional
+                        Designs</span></a>
             </div>
-        </header>
-        <main>
-            <section class="billboard">
-                <div class="wrapper">
-                    <div class="billboard__content">
-                        <h2 class="billboard__title">HOLA, SOY
-                            <br>POUYA</h2>
-                        <h1>
-                            Diseñador gráfico y UX/UI
-                        </h1>
-                        <h3>
-                            Diseño y desarollo soluciones innovadoras
-                            en productos y servicios digitales centrados en el usuario.
-                        </h3>
-                    </div>
-                    <a class="button" href="#Proyectos">Conóceme</a>
-                    <img class="billboard__image" src="assets/img/Group 1.png" alt="" />
-                </div>
-            </section>
-            <section id="Proyectos" class="Proyectos">
-                <div class="wrapper">
-                    <div class="row reverse">
-                        <div class="Proyectos__content column">
-                            <h2>Proyecots</h2>
-                            <p>2021</p>
-                            <p>space travel</p>
-                            <p>diseño ux/ui</p>
-                        </div>
-                        <div class="column">
-                            <div class="profile-picture"></div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="wrapper">
-                    <div class="row reverse">
-                        <div class="Proyectos__content column">
-                            
-                            
-                            <p>2021</p>
-                            <p>space travel</p>
-                            <p>diseño ux/ui</p>
+            <nav class="navigation">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
 
-                            
-                        </div>
-                        <div class="column">
-                            <div class="profile-picture"></div>
-                        </div>
-                    </div>
+            <button class="menu-open" onclick="mostrar()">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H0V0H18V1Z" fill="#1A1A1A" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V10H18V11Z" fill="#1A1A1A" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H0V5H18V6Z" fill="#1A1A1A" />
+                </svg>
+            </button>
+            <button class="menu-close" onclick="ocultar()">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="13.0815" y2="13.3744" stroke="black" />
+                    <line x1="0.646447" y1="13.6464" x2="13.3744" y2="0.918525" stroke="black" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- #END HEADER -->
 
-                </div>
-                <div class="wrapper">
-                    <div class="row reverse">
-                        <div class="Proyectos__content column">
-                            
-                            
-                            <p>2021</p>
-                            <p>space travel</p>
-                            <p>diseño ux/ui</p>
-
-                            
-                        </div>
-                        <div class="column">
-                            <div class="profile-picture"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-            <section class="contact">
-                <div class="wrapper">
-                    <div class="contact__row  row">
-                        <div class="contact__title  column">
-                            Te interesa hacer un proyecto juntxs?
-                        </div>
-                        <div class="column">
-                            <a class="button" href="">Contáctame</a>
-                            <a class="button hollow" href="">Contáctame</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <br><br>
-        <footer class="footer">
+    <!-- MAIN -->
+    <main>
+        <!-- BIENVENIDA -->
+        <section id="bienvenida" class="billboard">
             <div class="wrapper">
-                Footer
-            </div>
-        </footer>
 
-    </body>
+                <div class="billboard_content">
+                    <h3>Hola, Soy <br><span class="txt-primary">Pouya</span></h3>
+                    <h1>Diseñador gráfico y UX/UI</h1>
+                    <h2>Diseño y desarrollo de soluciones innovadoras en <span class="txt-primary">productos y servicios
+                            digitales</span> centrados en el usuario.</h2>
+                    <a href="#" class="button">Conóceme</a>
+                </div>
+
+                <div class="billboard_img">
+                    <!-- <img src="img/billboard_img.png" alt="billboard_banner"> -->
+                </div>
+            </div>
+        </section>
+        <!-- #END BIENVENIDA -->
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="proyectos">
+            <h2 class="txt-primary">Proyectos</h2>
+            <div class="wrapper">
+                <div class="row">
+                    <div id="proyect-1" class="column proyect-item">
+                        <p class="proyect-year txt-primary">2021</p>
+                        <p class="proyect-title">Space Travel</p>
+                        <p class="proyect-description">Diseño UX/UI</p>
+                    </div>
+                    <div id="proyect-2" class="column proyect-item">
+                        <p class="proyect-year txt-primary">2021</p>
+                        <p class="proyect-title">Enfoque</p>
+                        <p class="proyect-description">Diseño UX/UI</p>
+                    </div>
+                    <div id="proyect-3" class="column proyect-item">
+                        <p class="proyect-year txt-primary">2021</p>
+                        <p class="proyect-title">Sanofeel</p>
+                        <p class="proyect-description">Diseño UX/UI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #END PROYECTOS -->
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="column">
+                        <h2>Te interesa <br>hacer un<br> proyecto juntxs?</h2>
+                        <a href="" class="button">Contáctame</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- #END CONTACTO -->
+
+    </main>
+    <!-- #END MAIN -->
+
+    <!-- #FOOTER -->
+    <footer id="footer">
+        <div class="wrapper">
+            <ul class="redes">
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p>© 2021 Pouya Momeni.</p>
+        </div>
+    </footer>
+    <!-- #END FOOTER -->
+
+    <!-- FLECHA PARA IR HACIA ARRIBA-->
+    <a href="#header" class="ir-arriba"><i class="fas fa-arrow-up"></i></a>
+
+
+    <script>
+
+        var mediaqueryList = window.matchMedia("(min-width: 996px)");
+
+        function manejador(EventoMediaQueryList) {
+            if (EventoMediaQueryList.matches) {
+                console.log('La media query ahora se cumple');
+                document.querySelector(".menu-open").style.display = "none";
+                document.querySelector(".menu-close").style.display = "none";
+                document.querySelector("#header").style.background = "transparent";
+                document.querySelector(".logo a").style.color = "#000";
+            } else {
+                console.log('La media query ya no se cumple');
+                ocultar();
+            }
+        }
+
+        // asociamos el manejador de evento
+        mediaqueryList.addListener(manejador);
+
+      
+
+        function mostrar() {
+            document.querySelector(".menu-open").style.display = "none";
+            document.querySelector(".menu-close").style.display = "block";
+            document.querySelector("#header").style.background = "#2C46FF";
+            document.querySelector(".navigation").style.display = "block";
+            document.querySelector(".logo a").style.color = "#fff";
+
+        }
+
+        function ocultar() {
+            document.querySelector(".menu-open").style.display = "block";
+            document.querySelector(".menu-close").style.display = "none";
+            document.querySelector("#header").style.background = "transparent";
+            document.querySelector(".navigation").style.display = "none";
+            document.querySelector(".logo a").style.color = "#000";
+
+        }
+    </script>
+</body>
+
 
 </html>
