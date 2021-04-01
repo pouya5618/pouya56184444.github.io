@@ -215,10 +215,6 @@ margin: 2rem 0;
   background: url('../img/sanofeel.jpg')no-repeat center center;
   background-size: cover;
 }
-#proyectos div#proyect-4{
-  background: url('../img/spacetravel.jpg')no-repeat center center;
-  background-size: cover;
-}
 
 /* ESTILOS PARA UTILIZAR UNA IMAGEN DE FONDO Y UNA CAPA SEMI-TRANSPARENTE
 #proyectos .row .proyect-item{
