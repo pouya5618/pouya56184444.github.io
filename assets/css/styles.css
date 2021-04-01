@@ -204,15 +204,15 @@ margin: 2rem 0;
 }
 
 #proyectos div#proyect-1{
-  background: url('./img/spacetravel.jpg')no-repeat center center;
+  background: url('../img/spacetravel.jpg')no-repeat center center;
   background-size: cover;
 }
 #proyectos #proyect-2{
-  background: url('./img/enfoque.jpg')no-repeat center center;
+  background: url('../img/enfoque.jpg')no-repeat center center;
   background-size: cover;
 }
 #proyectos #proyect-3{
-  background: url('./img/sanofeel.jpg')no-repeat center center;
+  background: url('../img/sanofeel.jpg')no-repeat center center;
   background-size: cover;
 }
 
