@@ -4,7 +4,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+/*SMOOTH SCROLL*/
+html{
+  scroll-behavior: smooth;
+}
 /* ESTILOS GENERALES  */
 *{
     padding: 0;
@@ -15,10 +18,6 @@ a{
 }
 ul{
     list-style: none;
-}
-
-html{
-  cursor: url(./img/cursor.svg);
 }
 
 /* Set core body defaults */
@@ -166,7 +165,8 @@ margin: 2rem 0;
 }
 #bienvenida .billboard_img{
   margin-top: 4rem;
-  background: #333333;
+  background: #C4C4C4;
+  height: 300px;
 }
 #bienvenida .billboard_img img{
   width: 100%;
@@ -190,16 +190,17 @@ margin: 2rem 0;
 #proyectos .row {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 #proyectos .row .proyect-item{
   padding: 2rem;
  /* background: #333333; */
   color: #fff;
   margin-top: 2rem;
-  min-height: 400px;
+  min-height: 410px;
+  min-width: 330px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 
 #proyectos div#proyect-1{
@@ -212,6 +213,10 @@ margin: 2rem 0;
 }
 #proyectos #proyect-3{
   background: url('../img/sanofeel.jpg')no-repeat center center;
+  background-size: cover;
+}
+#proyectos div#proyect-4{
+  background: url('../img/spacetravel.jpg')no-repeat center center;
   background-size: cover;
 }
 
@@ -299,6 +304,9 @@ padding: .5rem;
 background: #2e47ff2e;
 right: 2rem;
 color: #fff;
+width: 49px;
+height: 49px;
+text-align: center;
 }
 
 /*** RESPONSIVE DESIGN ***/
@@ -354,6 +362,7 @@ color: #fff;
     align-items: center;
     display: flex;
     margin-top: 0;
+    height: auto!important;
   }
   /* PROYECTOS */
   #proyectos .wrapper .row {
@@ -361,10 +370,15 @@ color: #fff;
     flex-direction: row;
     flex-wrap: wrap;
   }
+  #proyectos .row{
+    justify-content: center;
+  }
   #proyectos .row .proyect-item{
-    margin-top: 0;
-    width: 50%;
+    width: 49%;
     flex: 0 0 auto;
+    margin: .5rem;
+    height: 900px;
+    width: 552px;
   }
   /* CONTACTO */
   #contacto h2 br{
