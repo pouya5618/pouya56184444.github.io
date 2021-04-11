@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- PERSONAL STYLES-->
+    <link href="../assets/css/styles.css" rel="stylesheet" />
+
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html" class="secondary-font">POUYA</a>
+            </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Sobre_mi/index.html">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            
+            <button class="menu-open" onclick="mostrar()">
+                <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 1H0V0H18V1Z" fill="#1A1A1A" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 11H0V10H18V11Z" fill="#1A1A1A" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18 6H0V5H18V6Z" fill="#1A1A1A" />
+                </svg>
+            </button>
+            <button class="menu-close" onclick="ocultar()">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0.353553" y1="0.646447" x2="13.0815" y2="13.3744" stroke="black" />
+                    <line x1="0.646447" y1="13.6464" x2="13.3744" y2="0.918525" stroke="black" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <!-- #END HEADER -->
+
+    <section id="contacto">
+        <div class="wrapper">
+            <h2 class="txt-primary">Contacto</h2>
+            <div class="formulario"></div>
+            <div class="datos-contacto">
+                <h2>¿Charlamos?</h2>
+                <p>Podemos trabajar juntos o simplemente establecer un contacto.</p>
+                <p class="mail-contact">Pouyam5618@gmail.com</p>
+                <p class="phone-contact">+34 689 385 618</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- #FOOTER -->
+    <footer id="footer">
+        <div class="wrapper">
+            <ul class="redes">
+                <li><a href="https://www.behance.net/pouyamomeni"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></li>
+                <li><a href="https://www.linkedin.com/in/pouyam5618/"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p>© 2021 Pouya Momeni.</p>
+        </div>
+    </footer>
+    <!-- #END FOOTER -->
+
+    <!-- FLECHA PARA IR HACIA ARRIBA-->
+    <a href="#header" class="ir-arriba"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+
+        var mediaqueryList = window.matchMedia("(min-width: 996px)");
+
+        function manejador(EventoMediaQueryList) {
+            if (EventoMediaQueryList.matches) {
+                console.log('La media query ahora se cumple');
+                document.querySelector(".menu-open").style.display = "none";
+                document.querySelector(".menu-close").style.display = "none";
+                document.querySelector("#header").style.background = "transparent";
+                document.querySelector(".logo a").style.color = "#000";
+            } else {
+                console.log('La media query ya no se cumple');
+                ocultar();
+            }
+        }
+
+        // asociamos el manejador de evento
+        mediaqueryList.addListener(manejador);
+
+      
+
+        function mostrar() {
+            document.querySelector(".menu-open").style.display = "none";
+            document.querySelector(".menu-close").style.display = "block";
+            document.querySelector("#header").style.background = "#2C46FF";
+            document.querySelector(".navigation").style.display = "block";
+            document.querySelector(".logo a").style.color = "#fff";
+
+        }
+
+        function ocultar() {
+            document.querySelector(".menu-open").style.display = "block";
+            document.querySelector(".menu-close").style.display = "none";
+            document.querySelector("#header").style.background = "transparent";
+            document.querySelector(".navigation").style.display = "none";
+            document.querySelector(".logo a").style.color = "#000";
+
+        }
+    </script>
+</body>
+
+
+</html>
