@@ -251,61 +251,7 @@ margin: 2rem 0;
 }*/
 
 
-/* ESTILOS SECCION SOBRE MI */
-#sobre_mi {
-  margin-top: 1rem;
-}
-#sobre_mi .wrapper{
-  overflow: hidden;
-  position: relative;
-}
-#sobre_mi .billboard_content h3{
-  line-height: 1.1;
-  font-weight: 500;
-  font-size: 24px;
-}
-#sobre_mi .billboard_content h1{
-margin-bottom: 2rem;
-margin-top: .5rem;
-font-size: 32px;
-color: #3C3C3C;
-}
-#sobre_mi .billboard_content .descripcion p{
-  margin: 1rem 0;
-  font-size: 22px;
-  font-weight: 300;
-  color: #868686;
-}
-#sobre_mi .row {
-  margin-top: 2rem;
-}
-#sobre_mi .herramientas h2, #sobre_mi .servicios h2{
-  margin-top: 1rem;
-  font-size: 26px;
-  color: #3C3C3C;
-}
-#sobre_mi .herramientas p, #sobre_mi .servicios p{
-  margin: 1rem 0;
-  font-size: 22px;
-  font-weight: 400;
-  color: #868686;
-}
-#sobre_mi .button {
-  width: 100%;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 5px;
-}
-#sobre_mi .billboard_img{
-  margin-top: 2rem;
-  background: #333333;
-}
-#sobre_mi .billboard_img img{
-  width: 100%;
-  padding: 2rem;
-}
-/* END ESTILOS SECCION SOBRE MI */
+
 
 /* CONTACTO */
 #contacto .wrapper .txt-primary{
@@ -667,6 +613,113 @@ background: #3c3c3c;
 }
 /* END ESTILOS SECCION PROYECT-ENFOQUE*/
 
+/* ESTILOS SECCION SOBRE MI */
+
+#sobre_mi {
+  margin-top: 1rem;
+}
+#sobre_mi .wrapper{
+  overflow: hidden;
+  position: relative;
+}
+#sobre_mi .billboard_content h3{
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: 24px;
+}
+#sobre_mi .billboard_content h1{
+margin-bottom: 2rem;
+margin-top: .5rem;
+font-size: 32px;
+color: #3C3C3C;
+}
+#sobre_mi .billboard_content .descripcion p{
+  margin: 1rem 0;
+  font-size: 22px;
+  font-weight: 300;
+  color: #868686;
+}
+#sobre_mi .row {
+  margin-top: 2rem;
+}
+#sobre_mi .herramientas h2, #sobre_mi .servicios h2{
+  margin-top: 1rem;
+  font-size: 26px;
+  color: #3C3C3C;
+}
+#sobre_mi .herramientas p, #sobre_mi .servicios p{
+  margin: 1rem 0;
+  font-size: 22px;
+  font-weight: 400;
+  color: #868686;
+}
+#sobre_mi .button {
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+}
+#sobre_mi .billboard_img{
+  margin-top: 2rem;
+  background: #333333;
+}
+#sobre_mi .billboard_img img{
+  width: 100%;
+  padding: 2rem;
+}
+
+
+
+/* ESTILOS SECCION CONTACTOS */
+
+#contacto {
+  margin-top: 7rem;
+}
+#contacto .row{
+  padding: 1.5rem;
+  background: #2E47FF;
+}
+#contacto .row .column h2{
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+#contacto .row .column .button {
+  display: block;
+  background: #333333;
+  margin: 2.5rem auto 0 auto;
+  min-width: 80%;
+}
+
+/* ESTILOS FOOTER */
+#footer {
+  margin-top: 2rem;
+  background: #333333;
+  padding: 2rem 0;
+}
+#footer ul{
+  display: flex;
+  justify-content: center;
+}
+#footer ul li {
+  margin-right: 1rem;
+}
+#footer ul li i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+#footer p{
+  text-align: center;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* END ESTILOS SECCION SOBRE MI */
+
+
+
 
 /* ESTILOS FOOTER */
 #footer {
@@ -707,7 +760,13 @@ text-align: center;
 }
 
 /* RESPONSIVE DESIGN  */
-
+@media (min-width: 768px) {
+  #sobre_mi .button {
+    width: 50%;
+    margin:auto;
+    margin: 2rem auto;
+  }
+}
 
 @media (min-width: 996px) {
   /* ESTILOS GENERALES */
@@ -787,48 +846,55 @@ text-align: center;
   }
 
   /* SOBRE MI */
-  @media (min-width: 768px) {
-  #sobre_mi .button {
-    width: 50%;
-    margin:auto;
-    margin: 2rem auto;
-  }
-}
-  #sobre_mi .wrapper{
-    display: flex;
-    justify-content: space-between;
-  }
-  #sobre_mi .billboard_content{
-    width: 50%;
-    flex:0 0 auto;
-  }
-  #sobre_mi .billboard_content .descripcion p {
-    font-size: 20px;
-  }
-  #sobre_mi .billboard_content h1{
-    font-size: 36px;
-  }
-  #sobre_mi .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  #sobre_mi .row .herramientas{
-    width: 50%;
-  }
-  #sobre_mi .row .servicios {
-    width: 45%;
-  }
-  #sobre_mi .herramientas h2, #sobre_mi .servicios h2{
-    font-size: 22px;
-  }
-  #sobre_mi .billboard_img{
-    flex: 0 0 auto;
-    width: 45%;
-    margin-top: 12rem;
-  }
-  #sobre_mi .button {
-    margin: 2rem 0!important;
-  }
+    /* SOBRE MI */
+    #sobre_mi .wrapper{
+      display: flex;
+      justify-content: space-between;
+    }
+    #sobre_mi .billboard_content{
+      width: 50%;
+      flex:0 0 auto;
+    }
+    #sobre_mi .billboard_content .descripcion p {
+      font-size: 20px;
+    }
+    #sobre_mi .billboard_content h1{
+      font-size: 36px;
+    }
+    #sobre_mi .row {
+      display: flex;
+      justify-content: space-between;
+    }
+    #sobre_mi .row .herramientas{
+      width: 50%;
+    }
+    #sobre_mi .row .servicios {
+      width: 45%;
+    }
+    #sobre_mi .herramientas h2, #sobre_mi .servicios h2{
+      font-size: 22px;
+    }
+    #sobre_mi .billboard_img{
+      flex: 0 0 auto;
+      width: 45%;
+      margin-top: 12rem;
+    }
+    #sobre_mi .button {
+      margin: 2rem 0!important;
+    }
+    
+    /* CONTACTO */
+    #contacto h2 {
+      font-size: 3rem!important;
+      font-weight: 500;
+    }
+    #contacto h2 br{
+      display: none;
+    }
+    #contacto a.button{
+      min-width: 25%!important;
+    }
+    
     /* FORM - CONTACTO */
   @media (min-width: 768px) {
   #contacto .wrapper .txt-primary{
