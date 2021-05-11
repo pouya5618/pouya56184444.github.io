@@ -57,6 +57,15 @@ h5,
     padding: 0 1rem;
   }
 
+
+.wrapper-smaller {
+    margin: 0 auto;
+    max-width: 73rem;
+    padding: 0 1rem;
+  }  
+
+
+
 /* BOTON GENERAL */
   .button {
     background: #2C46FF;
@@ -189,14 +198,19 @@ margin: 2rem 0;
 }
 #proyectos .row {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
+
+.project-link{
+  margin-top: .5rem;
+}
+
 #proyectos .row .proyect-item{
   padding: 2rem;
  /* background: #333333; */
   color: #fff;
-  margin-top: .5rem;
+  
   min-height: 410px;
   min-width: 330px;
   display: flex;
@@ -760,6 +774,13 @@ text-align: center;
 }
 
 /* RESPONSIVE DESIGN  */
+
+@media (max-width: 1167px) {
+#proyectos .row {
+  flex-direction:column ;
+  justify-content: center;
+  }
+}
 @media (min-width: 768px) {
   #sobre_mi .button {
     width: 50%;
@@ -827,13 +848,14 @@ text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  #proyectos .row{
-    justify-content: center;
+ 
+  .project-link{
+    margin: .5rem;
   }
+
   #proyectos .row .proyect-item{
     width: 49%;
     flex: 0 0 auto;
-    margin: .5rem;
     height: 900px;
     width: 552px;
   }
