@@ -325,8 +325,12 @@ margin: 2rem 0;
   margin-top: 1rem;
 }
 #space-proyect .proyect-img {
-  background: #3c3c3c;
+  background: url(../img/spacetravel.jpg) no-repeat center; 
+  background-size: cover;
   height: 500px;
+  position: relative;
+  /* background: #3c3c3c;
+  height: 500px; */
 }
 #space-proyect .proyect-header{
   margin-bottom: 3rem;
@@ -415,7 +419,7 @@ margin: 2rem 0;
   margin-top: 1rem;
 }
 #sanofeel-proyect .proyect-img {
-  background: url(../img/spacetravel.jpg) no-repeat center; 
+  background: url(../img/sanofeel.jpg) no-repeat center; 
   background-size: cover;
   height: 500px;
   position: relative;
@@ -514,8 +518,12 @@ background: #3c3c3c;
   margin-top: 1rem;
 }
 #enfoque-proyect .proyect-img {
-  background: #3c3c3c;
+  background: url(../img/enfoque.jpg) no-repeat center; 
+  background-size: cover;
   height: 500px;
+  position: relative;
+  /* background: #3c3c3c;
+  height: 500px; */
 }
 #enfoque-proyect .proyect-header{
   margin-bottom: 3rem;
