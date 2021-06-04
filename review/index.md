@@ -1,6 +1,6 @@
 # Review final
 
-Buen trabajo Poya, tienes un código muy organizado y limpio. Me hubiese gustado ver terminado el proyecto, ya que ahora está sin imágenes. Te paso el feedback para que puedas seguir mejorándolo.
+Buen trabajo Pouya, tienes un código muy organizado y limpio. Me hubiese gustado ver terminado el proyecto, ya que ahora está sin imágenes. Te paso el feedback para que puedas seguir mejorándolo.
 
 Veo que has utilizado font-awesome para los iconos. No está mal, pero la librería pesa bastante y al final, solo la utilizas para 5 iconos como mucho. En este caso te recomendaría utilizar svg, sin librerías, esto ayudaría a la velocidad de carga de tu página.
 
