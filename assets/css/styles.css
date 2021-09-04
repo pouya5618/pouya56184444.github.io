@@ -686,9 +686,9 @@ color: #3C3C3C;
   padding-bottom: 1rem;
   border-radius: 5px;
 }
-#sobre_mi .billboard_img{
+/* #sobre_mi .billboard_img{
   margin-top: 2rem;
-  background: #333333;
+  background: #333333; */
 }
 #sobre_mi .billboard_img img{
   width: 100%;
